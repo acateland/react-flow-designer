@@ -1,5 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`panTo should generate an action with proper coordinates 1`] = `
+Object {
+  "type": "FLOWDESIGNER_PAN_TO",
+  "x": 100,
+  "y": 100,
+}
+`;
+
+exports[`panTo should return "null" if not a number 1`] = `null`;
+
 exports[`setZoom if transform object is not well set return null 1`] = `null`;
 
 exports[`setZoom should generate an action with proper shape 1`] = `

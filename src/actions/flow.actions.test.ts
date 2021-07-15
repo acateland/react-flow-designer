@@ -18,3 +18,12 @@ describe('setZoom', () => {
 		expect(flowActions.setZoom({ k: 'yolo' as any, x: 0, y: 0 })).toMatchSnapshot();
 	});
 });
+
+describe('panTo', () => {
+	it('should generate an action with proper coordinates', () => {
+		expect(flowActions.panTo(100, 100)).toMatchSnapshot();
+	});
+	it('should return "null" if not a number', () => {
+		expect(flowActions.panTo('NaN' as any, 100)).toMatchSnapshot();
+	});
+});
